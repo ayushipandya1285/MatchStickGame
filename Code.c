@@ -18,3 +18,23 @@ scanf("%d",&m.pick);
 if(m.pick<5 && m.pick>0)
 {
  ms1=ms1-m.pick;
+printf ("\n Match sticks left: %d",ms1);
+ m.cpick=5-m.pick;
+printf ("\n Computer chooses: %d", m.cpick);
+ ms1=ms1-m.cpick;
+printf ("\n Match sticks left: %d",ms1);
+ matchstick(ms1);
+ }
+ else
+ printf ("Invalid no \n Enter sticks bet 1 to 4 only.");
+ matchstick(ms1);
+ }
+ int main()
+{
+ m.ms=21;
+ printf ("There are total 21 matchsticks\n Whoever is forced to pick a last match stick loses the game.\n");
+ printf("pick 1 or 2 or 3 or 4 matches\n");
+matchstick(m.ms);
+ return 0;
+}
+
